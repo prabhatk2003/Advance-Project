@@ -1,0 +1,148 @@
+*{
+    overflow-x: hidden;
+}
+body {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(245, 231, 245);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+    font-size: large;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+}
+
+h2{
+    
+    font-size: xx-large;
+    font:bold;
+    font-weight: 700;
+}
+
+#home{
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.login{
+    padding: 2rem;
+    margin: 1rem;
+    /* display: none; */
+}
+
+
+
+#appointments{
+    padding: 2rem;
+    margin: 1rem;
+    /* display: none; */
+}
+
+#home p{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form button {
+    margin: 0.5rem 0;
+}
+
+form input {
+    padding: 0.5rem;
+    width: 200px;
+}
+
+
+.click{
+    margin-top: 1rem;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    background-color: #1f1f1f;
+    font-size: 18px;
+    box-shadow: 5px 5px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+}
+
+.click::before{
+    content:"";
+    background-color: #e84949;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.8s;
+    z-index: -1;
+}
+
+.click:hover::before{
+    transform: scaleX(1);
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#appointmentList {
+    margin-top: 2rem;
+}
+
+#contact{
+    background-color: #ffdddd;
+    text-align: center;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Book Appointment</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Student-Teacher Booking Appointment</h1>
+        <p>Book appointments with your teachers easily and efficiently.</p>
+    </section>
+
+    <section class="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit" class="click">Login</button>
+        </form>
+    </section>
+
+    <section id="appointments">
+        <h2>Appointments</h2>
+        <div id="appointmentList"></div>
+        <form id="appointmentForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            <label for="teacherName">Teacher Name:</label>
+            <input type="text" id="teacherName" required>
+            <label for="appointmentTime">Time:</label>
+            <input type="datetime-local" id="appointmentTime" required>
+            <button type="submit" class="click">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For any queries, contact us at xyz200@gmail.com</p>
+    </section>
+
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
